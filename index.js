@@ -29,12 +29,12 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(number) {
-  // return number * (number + 1) / 2;
-  let count = 0;
-  for (let i = 1; i <= number; i++){
-    count += i;
-    }
-    return count;
+  return number * (number + 1) / 2;
+  // let count = 0;
+  // for (let i = 1; i <= number; i++){
+  //   count += i;
+  //   }
+  //   return count;
   }
  
   console.log(summation(4));
