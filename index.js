@@ -16,7 +16,8 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+  //Closure functions is when the inner function or child is able to refer to the variables from a parent scope even though it has been closed or called. This means the nested function is able to access those internal variables because it is a child of myFunction, you can only pass values down and you cannot pass them back up. Since we are declaring a variable in the first function, we are able to access it because they are scoped into the function.
+  
 
 
 
@@ -29,12 +30,12 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(number) {
-  return number * (number + 1) / 2;
-  // let count = 0;
-  // for (let i = 1; i <= number; i++){
-  //   count += i;
-  //   }
-  //   return count;
+  // return number * (number + 1) / 2;
+  let count = 0;
+  for (let i = 1; i <= number; i++){
+    count += i;
+    }
+    return count;
   }
  
   console.log(summation(4));
